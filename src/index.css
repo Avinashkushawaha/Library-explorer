@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+/* :root {
+  color-scheme: light dark;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+.light {
+  color-scheme: light;
+} 
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+  }
+}
+
+body {
+  @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100;
+  transition: background-color 0.3s ease;
+} */
+
+
+html {
+  @apply transition-colors duration-300;
+}
+
+html.light {
+  @apply bg-white text-gray-900;
+}
+
+html.dark {
+  @apply bg-gray-900 text-gray-100;
+}
+
+/* Apply to body as well */
+body {
+  @apply min-h-screen;
+  background: inherit;
+  color: inherit;
+}
+
+/* Dark mode styles for all elements */
+.dark {
+  @apply bg-gray-900 text-gray-100;
+  
+  /* You can also define custom properties */
+  --scrollbar-track: #1f2937;
+  --scrollbar-thumb: #4b5563;
+}
+
+.light {
+  @apply bg-white text-gray-900;
+  
+  --scrollbar-track: #f3f4f6;
+  --scrollbar-thumb: #d1d5db;
+}
+
+/* Custom scrollbar for dark mode */
+.dark ::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+}
