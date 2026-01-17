@@ -6,7 +6,7 @@ Library Explorer is a simple web application that allows users to browse, search
 
 ## 🖼️ Preview
 
-![Library Explorer Preview](./screenshots/library-explorer.png)
+![Library Explorer Preview](ss.png)
 
 ---
 
